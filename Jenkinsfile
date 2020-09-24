@@ -4,7 +4,7 @@ node {
         checkout scm
     }	
     stage('Build') {
-        bat '''pip install -r requirements.txt' 
+        bat '''pip install -r requirements.txt 
 		behave''' 
     }	
 }

@@ -10,8 +10,7 @@ node {
         bat 'behave' 
    }	
    stage('Deploy') {
-       if (currentBuild.result == 'FAILURE') { 
-            bat 'echo "This works Fine"'
+       echo "${currentBuild.result} is the result ${env.BUILD_URL}."
         }
    }
 }

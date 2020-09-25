@@ -11,6 +11,5 @@ node {
    }	
    stage('Deploy') {
        echo "${currentBuild.result} is the result ${env.BUILD_URL}."
-        }
    }
 }

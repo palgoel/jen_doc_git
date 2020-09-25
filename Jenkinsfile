@@ -18,7 +18,7 @@ node {
         currentBuild.result = 'FAILURE'
      }
        echo "${currentBuild.result} is the result ${env.BUILD_URL}."
-       bat '''dir > sample.txt
-       echo "This is some text" > sample.txt'''
+       bat '''dir>sample.txt
+       echo "This is some text">sample.txt'''
    }
 }

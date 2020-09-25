@@ -10,7 +10,7 @@ node {
         bat 'behave' 
    }	
    stage('Deploy') {
-       if (currentBuild.result == null || currentBuild.result == 'SUCCESS') { 
+       if (currentBuild.result == null || currentBuild.result == 'FAILURE') { 
             bat 'echo "This works Fine"'
         }
    }

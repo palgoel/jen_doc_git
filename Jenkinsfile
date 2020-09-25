@@ -8,5 +8,9 @@ node {
     }	
    stage('Test') {
         bat 'behave' 
-    }	
+   }	
+   stage('Deploy') {
+        bat '''if %currentBuild.result% == null || %currentBuild.result% == SUCCESS echo "The build passed"
+     '''
+   }
 }

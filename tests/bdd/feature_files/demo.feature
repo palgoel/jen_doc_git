@@ -12,7 +12,3 @@ Feature:(REST-API) Get from mock rest api a json response
   Scenario: Create a youtrack issue for particular project based on project assigned
     And user should be able to add an issue to 0-1
 
-  Scenario: Create one more youtrack issue for particular project based on project assigned
-    And user should be able to add an issue to 0-1
-
-

@@ -15,7 +15,7 @@ def step_impl(context):
 @then('verify that status code returned is 200')
 def step_impl(context):
     # print ("Status code =",context.response.status_code)
-    assert context.response.status_code == 201, "Response code is different: %s" % context.response.status_code + \
+    assert context.response.status_code == 200, "Response code is different: %s" % context.response.status_code + \
                                                "   Error: " + str(context.response.content)
 
 @step('user should be able to add an issue to 0-1')
